@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kulesh Maurya | Field Service Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root {
+  --primary: #2563eb;
+  --dark: #0f172a;
+  --light: #f1f5f9;
+  --card: white;
+}
+
+body.dark {
+  --primary: #3b82f6;
+  --dark: #020617;
+  --light: #0f172a;
+  --card: #111827;
+  color: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--light);
+  transition: 0.4s ease;
+}
+
+.hero {
+  min-height: 95vh;
+  background: linear-gradient(135deg,#0f172a,#2563eb);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 6px solid white;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.card {
+  background: var(--card);
+  padding: 35px;
+  border-radius: 22px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
+}
+
+.skill-item i {
+  font-size: 32px;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.timeline-item {
+  margin-bottom: 25px;
+}
+
+.timeline-item h3 {
+  margin-bottom: 8px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.contact a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<button class="toggle-btn" onclick="toggleMode()">Toggle Mode</button>
+
+<div class="hero">
+  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Kulesh Maurya">
+  <h1>Kulesh Maurya</h1>
+  <p>Field Service Engineer | CT | MRI | Cathlab</p>
+</div>
+
+<section>
+  <h2 class="section-title">About Me</h2>
+  <div class="card">
+    <p>
+      B.Tech Electrical Engineer with hands-on experience in installation, servicing, commissioning and maintenance of medical imaging systems. Currently working as Field Service Engineer supporting CT, MRI and Cathlab systems. Strong background in diagnostics, preventive maintenance and calibration of healthcare equipment.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Experience</h2>
+  <div class="card">
+    <div class="timeline-item">
+      <h3>Field Service Engineer – Philips India</h3>
+      <p>Installation support, preventive maintenance, calibration and corrective maintenance of CT, MRI and Cathlab systems.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Field Operations – Blackbuck GPS</h3>
+      <p>Handled tracking systems, on-site client support and troubleshooting real-time GPS issues.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Internship – Metro Rail Corporation</h3>
+      <p>Worked on signalling, electrical infrastructure and maintenance exposure in metro rail systems.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+
+    <div class="card skill-item">
+      <i class="fa-solid fa-microchip"></i>
+      <h3>Medical Equipment</h3>
+      <p>CT, MRI & Cathlab Systems</p>
+    </div>
+
+    <div class="card skill-item">
+      <i class="fa-solid fa-screwdriver-wrench"></i>
+      <h3>Maintenance</h3>
+      <p>Preventive & Corrective Maintenance</p>
+    </div>
+
+    <div class="card skill-item">
+      <i class="fa-solid fa-chart-line"></i>
+      <h3>Calibration</h3>
+      <p>System Performance Optimization</p>
+    </div>
+
+    <div class="card skill-item">
+      <i class="fa-solid fa-users"></i>
+      <h3>Client Handling</h3>
+      <p>Technical Support & Communication</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Project Work</h2>
+  <div class="card">
+    <h3>False Data Injection Attack Detection</h3>
+    <p>Used Genetic and PSO algorithm to control frequency fluctuation in power systems.</p>
+
+    <br>
+
+    <h3>Wireless Power Transfer Charger</h3>
+    <p>Worked on wireless energy transfer technology between two endpoints.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Work Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=300&fit=crop" alt="CT Scanner">
+    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=300&fit=crop" alt="MRI Machine">
+    <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400&h=300&fit=crop" alt="Cathlab">
+    <img src="https://images.unsplash.com/photo-1581093458791-9d42e6c798b8?w=400&h=300&fit=crop" alt="Medical Equipment Service">
+    
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Contact</h2>
+  <div class="card contact">
+    <p><i class="fa-solid fa-envelope"></i> kuleshmaurya08@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i> +91-7355208630</p>
+    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/kulesh-maurya-a18b921a0">LinkedIn Profile</a></p>
+    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Kuleshmaurya">GitHub Profile</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Kulesh Maurya | Portfolio</p>
+</footer>
+
+<script>
+function toggleMode() {
+  document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
