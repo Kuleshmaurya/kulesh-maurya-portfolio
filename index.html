@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kulesh Maurya | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+:root{
+--primary:#4f46e5;
+--secondary:#06b6d4;
+--dark:#0b1120;
+--glass: rgba(255,255,255,0.08);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background: linear-gradient(135deg,#020617,#0f172a);
+color:white;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:25px 8%;
+position:sticky;
+top:0;
+backdrop-filter: blur(12px);
+background: rgba(0,0,0,0.4);
+z-index:1000;
+}
+
+nav a{
+color:#cbd5f5;
+text-decoration:none;
+margin-left:25px;
+font-size:15px;
+}
+
+nav a:hover{
+color:#22d3ee;
+}
+
+/* HERO */
+
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align:center;
+padding:40px 20px;
+}
+
+.hero img{
+width:171px;
+height:210px;
+border-radius:50%;
+border:4px solid var(--secondary);
+box-shadow:0 0 40px rgba(6,182,212,0.4);
+margin-bottom:25px;
+object-fit:cover;
+}
+
+.hero h1{
+font-size:3rem;
+background: linear-gradient(90deg,#60a5fa,#22d3ee);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+margin-top:15px;
+font-size:1.2rem;
+color:#cbd5f5;
+}
+
+/* SECTIONS */
+
+section{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+}
+
+.section-title{
+font-size:2.4rem;
+text-align:center;
+margin-bottom:50px;
+}
+
+/* CARD */
+
+.card{
+background: var(--glass);
+padding:30px;
+border-radius:20px;
+backdrop-filter: blur(15px);
+border:1px solid rgba(255,255,255,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform: translateY(-8px);
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:15px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px;
+background:black;
+color:#94a3b8;
+margin-top:60px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<div><b>Kulesh</b></div>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+<img src="profile2.jpg">
+<h1>Kulesh Maurya</h1>
+<p>Field Service Engineer | Data Analytics Enthusiast</p>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="section-title">About Me</h2>
+<div class="card">
+B.Tech Electrical Engineer with hands-on experience in CT, MRI and Cathlab systems.  
+Also skilled in Data Analytics — Excel, SQL, Tableau, Python and Machine Learning.
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Medical Systems</h3>
+<p>CT, MRI, Cathlab Maintenance & Calibration</p>
+</div>
+
+<div class="card">
+<h3>Data Analytics</h3>
+<p>Excel, SQL, Tableau Dashboarding</p>
+</div>
+
+<div class="card">
+<h3>Programming</h3>
+<p>Python, Machine Learning</p>
+</div>
+
+<div class="card">
+<h3>Engineering</h3>
+<p>Troubleshooting, Diagnostics, Client Handling</p>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+<div class="grid">
+
+<div class="card">
+<h3>False Data Injection Attack Detection</h3>
+<p>Genetic & PSO algorithm for power system stability.</p>
+</div>
+
+<div class="card">
+<h3>Wireless Power Transfer</h3>
+<p>Wireless energy transfer prototype.</p>
+</div>
+
+<div class="card">
+<h3>Fitbit Healthcare Analysis</h3>
+<p>Excel dashboard and pivot analytics.</p>
+</div>
+
+<div class="card">
+<h3>IPL Auction SQL Analysis</h3>
+<p>SQL joins and data strategy building.</p>
+</div>
+
+<div class="card">
+<h3>Bike Haven Sales Dashboard</h3>
+<p>Interactive sales visualization dashboard.</p>
+</div>
+
+<div class="card">
+<h3>Salary Prediction ML</h3>
+<p>Python linear regression model.</p>
+</div>
+
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+<h2 class="section-title">Work Gallery</h2>
+<div class="gallery">
+
+<!-- Replace these later with your real photos -->
+
+<img src="https://images.unsplash.com/photo-1559757175-5700dde675bc">
+<img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d">
+<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514">
+<img src="https://images.unsplash.com/photo-1581093458791-9d42e6c798b8">
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+<div class="card">
+<p>Email: kuleshmaurya1889@gmail.com</p>
+<p>Phone: +91-7355208630</p>
+<p>LinkedIn: linkedin.com/in/kulesh-maurya</p>
+<p>GitHub: github.com/Kuleshmaurya</p>
+</div>
+</section>
+
+<footer>
+© 2026 Kulesh Maurya Portfolio
+</footer>
+
+</body>
+</html>
